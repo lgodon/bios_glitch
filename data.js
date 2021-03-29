@@ -42,7 +42,7 @@ module.exports.ROOMS = {
         area: "hall-colision.png",
         avatarScale: 2,
         pageBg: "#fef4d8",
-        spawn: [14, 84, 119, 92],
+        spawn: [20, 72, 100, 80],
         areaColors: {
             h313a91: { cmd: "enter", room: "sala1", label: "Sala 1", point: [100, 84], enterPoint: [104, 98], obstacle: false },
             h06ba0a: { cmd: "enter", room: "sala2", label: "Sala 2", point: [100, 84], enterPoint: [104, 98], obstacle: false },
@@ -55,40 +55,145 @@ module.exports.ROOMS = {
     sala1: {
         bg: "sala1-bg.png",
         area: "sala1-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#f9f4e3",
-        spawn: [14, 84, 119, 92],
+        spawn: [20, 76, 100, 90],
+        areaColors: {
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+        },
+        things: {
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Ana Laura Cantera", 
+                command: { cmd: "text", txt: "? de Ana Laura Cantera", 
+                    align: "left", lines: 4, url: "https://www.analauracantera.com.ar/", label: "", point: [33, 92] 
+                } 
+            },
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "? de Joaquín Fargas", 
+                command: { cmd: "text", txt: "? de Joaquín Fargas", 
+                    align: "left", lines: 4, url: "https://www.joaquinfargas.com/", label: "", point: [33, 92] 
+                } 
+            },
+            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Cellular seeds de Alejandra Marinaro", 
+                command: { cmd: "text", txt: "Cellular seeds de Alejandra Marinaro", 
+                    align: "left", lines: 4, url: "https://www.alejandramarinaro.com", label: "", point: [33, 92] 
+                } 
+            },
+            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "Agar Art", 
+                command: { cmd: "text", txt: "Agar Art", 
+                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                } 
+            },
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "? de Pablo Lapadula", 
+                command: { cmd: "text", txt: "? de Pablo Lapadula", 
+                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                } 
+            },
+        }
     },
 
     sala2: {
         bg: "sala2-bg.png",
         area: "sala2-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#a6dbab",
         spawn: [14, 84, 119, 92],
+        areaColors: {
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+        },
+        things: {
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Robot interactivo de Damián Ferrari", 
+                command: { cmd: "text", txt: "Robot interactivo de Damián Ferrari", 
+                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+                } 
+            },
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Omphalos de Oliverio Duhalde", 
+                command: { cmd: "text", txt: "Omphalos de Oliverio Duhalde", 
+                    align: "left", lines: 4, url: "https://www.oliverioduhalde.me/", label: "", point: [33, 92] 
+                } 
+            },
+            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Biomateriales", 
+                command: { cmd: "text", txt: "Biomateriales", 
+                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                } 
+            },
+            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "? de Luciana Paoletti", 
+                command: { cmd: "text", txt: "? de Luciana Paoletti", 
+                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                } 
+            },
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "? de Darío Sacco", 
+                command: { cmd: "text", txt: "? de Darío Sacco", 
+                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+                } 
+            },
+        }
     },
 
     sala3: {
         bg: "sala3-bg.png",
         area: "sala3-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#fae8e1",
         spawn: [14, 84, 119, 92],
+        areaColors: {
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+        },
+        things: {
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Daniel Alvarez Olmedo", 
+                command: { cmd: "text", txt: "? de Daniel Alvarez Olmedo", 
+                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+                } 
+            },
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Namiki de Claudia Valente", 
+                command: { cmd: "text", txt: "Namiki de Claudia Valente", 
+                    align: "left", lines: 4, url: "https://muru7-8.github.io/", label: "", point: [33, 92] 
+                } 
+            },
+            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Biominion de Colectivo Electrobiota", 
+                command: { cmd: "text", txt: "Biominion de Colectivo Electrobiota", 
+                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+                } 
+            },
+            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "El desafío de la vida de Ariel Wilner", 
+                command: { cmd: "text", txt: "El desafío de la vida de Ariel Wilner", 
+                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+                } 
+            },
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "Modelado molecular", 
+                command: { cmd: "text", txt: "Modelado molecular", 
+                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                } 
+            },
+        }
     },
 
     proyeccion: {
         bg: "proyeccion-bg.png",
         area: "proyeccion-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#fef4d8",
         spawn: [14, 84, 119, 92],
+        areaColors: {
+            he62121: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+        }
     },
 
     patio: {
         bg: "patio-bg.png",
         area: "patio-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#5467b5",
         spawn: [14, 84, 119, 92],
+        things: {
+            mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },
+            rosa: { file: "patio-formula-rosa.png", frames: 2, frameDelay: 30, position: [28, 51], label: "" },
+            naranja: { file: "patio-formula-naranja.png", frames: 2, frameDelay: 30, position: [35, 53], label: "" },
+            marron: { file: "patio-formula-marron.png", frames: 2, frameDelay: 30, position: [40, 50], label: "" },
+            alga1: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [7, 38], label: "" },
+            alga2: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [13, 52], label: "" },
+            alga3: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [7, 72], label: "" },
+            alga4: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [82, 12], label: "" },
+            alga5: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [119, 19], label: "" },
+            alga6: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [119, 72], label: "" },
+        }
     },
 };

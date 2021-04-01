@@ -42,6 +42,7 @@ module.exports.ROOMS = {
         area: "hall-colision.png",
         avatarScale: 2,
         pageBg: "#fef4d8",
+        bubblesY: 44,
         spawn: [20, 72, 100, 80],
         areaColors: {
             h313a91: { cmd: "enter", room: "sala1", label: "Sala 1", point: [34, 75], enterPoint: [110, 94], obstacle: false },
@@ -58,6 +59,7 @@ module.exports.ROOMS = {
         area: "sala1-colision.png",
         avatarScale: 3,
         pageBg: "#f9f4e3",
+        bubblesY: 30,
         spawn: [20, 76, 100, 90],
         areaColors: {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [34, 75], obstacle: false },
@@ -96,6 +98,7 @@ module.exports.ROOMS = {
         area: "sala2-colision.png",
         avatarScale: 3,
         pageBg: "#a6dbab",
+        bubblesY: 30,
         spawn: [14, 84, 119, 92],
         areaColors: {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [64, 72], obstacle: false },
@@ -134,6 +137,7 @@ module.exports.ROOMS = {
         area: "sala3-colision.png",
         avatarScale: 3,
         pageBg: "#fae8e1",
+        bubblesY: 30,
         spawn: [14, 84, 119, 92],
         areaColors: {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [94, 75], obstacle: false },
@@ -172,6 +176,7 @@ module.exports.ROOMS = {
         area: "proyeccion-colision.png",
         avatarScale: 3,
         pageBg: "#fef4d8",
+        bubblesY: 30,
         spawn: [14, 84, 119, 92],
         areaColors: {
             he62121: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [104, 98], obstacle: false },
@@ -183,6 +188,7 @@ module.exports.ROOMS = {
         area: "patio-colision.png",
         avatarScale: 2,
         pageBg: "#5467b5",
+        bubblesY: 36,
         spawn: [14, 84, 119, 92],
         areaColors: {
             he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },

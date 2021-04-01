@@ -116,13 +116,27 @@ function initMod(playerId, roomId) {
 
 //roomnameEnter: called when a player enters a room, after all the normal operations
 //called also for lurk mode (nickName == "")
-function experimentsEnter(playerId, roomId) {
-    print("MOD: " + players[playerId].nickName + " entered room " + roomId);
+function proyeccionEnter(playerId, roomId) {
+    if (players[playerId].nickName.length > 0) {
+        // start the video!
+        video = document.getElementById("iframe_video");
+        video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1";
+        e = document.getElementById("video-container");
+        if (e != null) e.style.display = "block";
+    }
+}
 
-    //a full screen welcome text appears 
-    longText = "Welcome " + players[playerId].nickName;
-    longTextLines = -1;
-    longTextAlign = "center";
+function hallEnter(playerId, roomId) {
+    video = document.getElementById("iframe_video");
+    video.src = "";
+    e = document.getElementById("video-container");
+    if (e != null) e.style.display = "none";
+}
+
+function proyeccionExit(playerId) {
+    print("Exiting proyection room");
+    video = document.getElementById("iframe_video");
+    video.src = "";
 }
 
 //roomnameExit: called right before a player exits or disconnects

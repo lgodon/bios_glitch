@@ -44,11 +44,12 @@ module.exports.ROOMS = {
         pageBg: "#fef4d8",
         spawn: [20, 72, 100, 80],
         areaColors: {
-            h313a91: { cmd: "enter", room: "sala1", label: "Sala 1", point: [100, 84], enterPoint: [104, 98], obstacle: false },
-            h06ba0a: { cmd: "enter", room: "sala2", label: "Sala 2", point: [100, 84], enterPoint: [104, 98], obstacle: false },
-            h7655a2: { cmd: "enter", room: "sala3", label: "Sala 3", point: [100, 84], enterPoint: [104, 98], obstacle: false },
-            h92562b: { cmd: "enter", room: "proyeccion", label: "Sala de proyección", point: [100, 84], enterPoint: [104, 98], obstacle: false },
-            hde3f1e: { cmd: "enter", room: "patio", label: "Patio", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+            h313a91: { cmd: "enter", room: "sala1", label: "Sala 1", point: [34, 75], enterPoint: [110, 94], obstacle: false },
+            h06ba0a: { cmd: "enter", room: "sala2", label: "Sala 2", point: [64, 72], enterPoint: [110, 94], obstacle: false },
+            h7655a2: { cmd: "enter", room: "sala3", label: "Sala 3", point: [94, 75], enterPoint: [110, 94], obstacle: false },
+            h92562b: { cmd: "enter", room: "proyeccion", label: "Sala de proyección", point: [114, 82], enterPoint: [18, 94], obstacle: false },
+            hde3f1e: { cmd: "enter", room: "patio", label: "Patio", point: [14, 82], enterPoint: [110, 84], obstacle: false },
+            h1a00fb: { cmd: "enter", room: "frente", label: "Afuera", point: [64, 96], enterPoint: [40, 90], obstacle: false },
         }
     },
 
@@ -59,7 +60,7 @@ module.exports.ROOMS = {
         pageBg: "#f9f4e3",
         spawn: [20, 76, 100, 90],
         areaColors: {
-            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [34, 75], obstacle: false },
         },
         things: {
             tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Ana Laura Cantera", 
@@ -97,7 +98,7 @@ module.exports.ROOMS = {
         pageBg: "#a6dbab",
         spawn: [14, 84, 119, 92],
         areaColors: {
-            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [64, 72], obstacle: false },
         },
         things: {
             tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Robot interactivo de Damián Ferrari", 
@@ -135,7 +136,7 @@ module.exports.ROOMS = {
         pageBg: "#fae8e1",
         spawn: [14, 84, 119, 92],
         areaColors: {
-            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+            h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [94, 75], obstacle: false },
         },
         things: {
             tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Daniel Alvarez Olmedo", 
@@ -173,16 +174,19 @@ module.exports.ROOMS = {
         pageBg: "#fef4d8",
         spawn: [14, 84, 119, 92],
         areaColors: {
-            he62121: { cmd: "enter", room: "hall", label: "Hall", point: [100, 84], enterPoint: [104, 98], obstacle: false },
+            he62121: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [104, 98], obstacle: false },
         }
     },
 
     patio: {
         bg: "patio-bg.png",
         area: "patio-colision.png",
-        avatarScale: 3,
+        avatarScale: 2,
         pageBg: "#5467b5",
         spawn: [14, 84, 119, 92],
+        areaColors: {
+            he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },
+        },
         things: {
             mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },
             rosa: { file: "patio-formula-rosa.png", frames: 2, frameDelay: 30, position: [28, 51], label: "" },

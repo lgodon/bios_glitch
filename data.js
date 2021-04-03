@@ -72,29 +72,29 @@ module.exports.ROOMS = {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [34, 75], obstacle: false },
         },
         things: {
-            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Ana Laura Cantera", 
-                command: { cmd: "text", txt: "? de Ana Laura Cantera", 
-                    align: "left", lines: 4, url: "https://www.analauracantera.com.ar/", label: "", point: [33, 92] 
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Inhalaciones territoriales", 
+                command: { cmd: "text", txt: "Inhalaciones territoriales\nde Ana Laura Cantera", 
+                    align: "center", lines: 2, url: "https://www.analauracantera.com.ar/inhalaciones", label: "", point: [25, 92] 
                 } 
             },
-            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "? de Joaquín Fargas", 
-                command: { cmd: "text", txt: "? de Joaquín Fargas", 
-                    align: "left", lines: 4, url: "https://www.joaquinfargas.com/", label: "", point: [33, 92] 
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Espacio de bioarte", 
+                command: { cmd: "text", txt: "Espacio de bioarte\nde Joaquín Fargas", 
+                    align: "center", lines: 2, url: "https://www.joaquinfargas.com/sala1/", label: "", point: [43, 80] 
                 } 
             },
-            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Cellular seeds de Alejandra Marinaro", 
+            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Cellular seeds", 
                 command: { cmd: "text", txt: "Cellular seeds de Alejandra Marinaro", 
-                    align: "left", lines: 4, url: "https://www.alejandramarinaro.com", label: "", point: [33, 92] 
+                    align: "center", lines: 2, url: "https://www.cellularseeds.com/", label: "", point: [61, 92] 
                 } 
             },
             tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "Agar Art", 
                 command: { cmd: "text", txt: "Agar Art", 
-                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/agarart#header", label: "", point: [79, 80] 
                 } 
             },
-            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "? de Pablo Lapadula", 
-                command: { cmd: "text", txt: "? de Pablo Lapadula", 
-                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "Gabinete biológico", 
+                command: { cmd: "text", txt: "Gabinete biológico de Pablo Lapadula", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/pablo-lapadula#header", label: "", point: [97, 92] 
                 } 
             },
         }
@@ -201,7 +201,7 @@ module.exports.ROOMS = {
             he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },
             hee94e3: { cmd: "action", actionId: "TragoRosaInteract", label: "Trago molecular", point: [36, 70], obstacle: false },
             hf6cc84: { cmd: "action", actionId: "TragoNaranjaInteract", label: "Tubo de ensayo", point: [36, 70], obstacle: false },
-            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Experimento", point: [36, 70], obstacle: false },
+            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Cultivo celular", point: [36, 70], obstacle: false },
         },
         things: {
             mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },

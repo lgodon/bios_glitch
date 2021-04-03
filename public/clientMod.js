@@ -157,5 +157,5 @@ function hallEnter(playerId, roomId) {
 
 function handStand(playerId, multiplier) {
     var p = players[playerId];
-    p.sprite.scale = multiplier * ASSET_SCALE;
+    p.sprite.scale = multiplier * 3;
 }

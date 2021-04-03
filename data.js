@@ -55,7 +55,7 @@ module.exports.ROOMS = {
         things: {
             mesita: { file: "mesitadete.png", frames: 2, frameDelay: 20, position: [56, 78], label: "Mesa de té", 
                 command: { cmd: "text", txt: "*Tienes un poco de frío*\n*Tomas un té calentito*", 
-                    align: "center", lines: 2, label: "", point: [33, 92] 
+                    align: "center", lines: 2, label: "", point: [60, 90] 
                 } 
             },
         }
@@ -193,15 +193,15 @@ module.exports.ROOMS = {
     patio: {
         bg: "patio-bg.png",
         area: "patio-colision.png",
-        avatarScale: 2,
+        avatarScale: 3,
         pageBg: "#5467b5",
         bubblesY: 36,
         spawn: [16, 40, 100, 80],
         areaColors: {
             he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },
-            hee94e3: { cmd: "action", actionId: "TragoRosaInteract", label: "Trago molecular", point: [36, 40], obstacle: false },
-            hf6cc84: { cmd: "action", actionId: "TragoNaranjaInteract", label: "Tubo de ensayo", point: [36, 40], obstacle: false },
-            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Fórmula secreta", point: [36, 40], obstacle: false },
+            hee94e3: { cmd: "action", actionId: "TragoRosaInteract", label: "Trago molecular", point: [36, 70], obstacle: false },
+            hf6cc84: { cmd: "action", actionId: "TragoNaranjaInteract", label: "Tubo de ensayo", point: [36, 70], obstacle: false },
+            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Experimento", point: [36, 70], obstacle: false },
         },
         things: {
             mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },

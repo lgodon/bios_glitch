@@ -111,29 +111,29 @@ module.exports.ROOMS = {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [64, 72], obstacle: false },
         },
         things: {
-            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Robot interactivo de Damián Ferrari", 
-                command: { cmd: "text", txt: "Robot interactivo de Damián Ferrari", 
-                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Vínculos empáticos", 
+                command: { cmd: "text", txt: "Vínculos empáticos\nde Demián Ferrari", 
+                    align: "center", lines: 2, url: "https://demiansferrari.wixsite.com/misitio/procesos", label: "", point: [25, 92] 
                 } 
             },
-            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Omphalos de Oliverio Duhalde", 
-                command: { cmd: "text", txt: "Omphalos de Oliverio Duhalde", 
-                    align: "left", lines: 4, url: "https://www.oliverioduhalde.me/", label: "", point: [33, 92] 
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Omphalos", 
+                command: { cmd: "text", txt: "Omphalos\nde Oliverio Duhalde", 
+                    align: "center", lines: 2, url: "https://www.oliverioduhalde.me/omphalos", label: "", point: [43, 80] 
                 } 
             },
             tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Biomateriales", 
-                command: { cmd: "text", txt: "Biomateriales", 
-                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+                command: { cmd: "text", txt: "Biomateriales\nde Verónica Bergottini y Ana Paula Hall", 
+                    align: "center", lines: 3, url: "https://bioarte-preview.netlify.app/artistas/biomateriales#header", label: "", point: [61, 92] 
                 } 
             },
-            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "? de Luciana Paoletti", 
-                command: { cmd: "text", txt: "? de Luciana Paoletti", 
-                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "Biopigmentos", 
+                command: { cmd: "text", txt: "Biopigmentos\nde Luciana Paoletti", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/luciana-paoletti/#header", label: "", point: [79, 80] 
                 } 
             },
-            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "? de Darío Sacco", 
-                command: { cmd: "text", txt: "? de Darío Sacco", 
-                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "Colonia", 
+                command: { cmd: "text", txt: "Colonia\nde Darío Sacco", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/dario-sacco#header", label: "", point: [97, 92] 
                 } 
             },
         }
@@ -150,29 +150,29 @@ module.exports.ROOMS = {
             h8e24d9: { cmd: "enter", room: "hall", label: "Hall", point: [64, 96], enterPoint: [94, 75], obstacle: false },
         },
         things: {
-            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "? de Daniel Alvarez Olmedo", 
-                command: { cmd: "text", txt: "? de Daniel Alvarez Olmedo", 
-                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+            tubo1: { file: "tubo-1.png", frames: 2, frameDelay: 20, position: [22, 55], label: "Con pan y con trabajo", 
+                command: { cmd: "text", txt: "Con pan y con trabajo\nde Daniel Alvarez Olmedo", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/daniel-alvarez-olmedo#header", label: "", point: [25, 92] 
                 } 
             },
-            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Namiki de Claudia Valente", 
-                command: { cmd: "text", txt: "Namiki de Claudia Valente", 
-                    align: "left", lines: 4, url: "https://muru7-8.github.io/", label: "", point: [33, 92] 
+            tubo2: { file: "tubo-2.png", frames: 2, frameDelay: 20, position: [40, 48], label: "Namiki", 
+                command: { cmd: "text", txt: "Namiki\nde Muru", 
+                    align: "center", lines: 2, url: "https://namiki-universo-digital.netlify.app/", label: "", point: [43, 80] 
                 } 
             },
-            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Biominion de Colectivo Electrobiota", 
-                command: { cmd: "text", txt: "Biominion de Colectivo Electrobiota", 
-                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+            tubo3: { file: "tubo-3.png", frames: 2, frameDelay: 20, position: [58, 55], label: "Terrafonías", 
+                command: { cmd: "text", txt: "Terrafonías\nde Colectivo Electrobiota", 
+                    align: "center", lines: 2, url: "https://youtu.be/ISXYyUg8tHc", label: "", point: [61, 92] 
                 } 
             },
-            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "El desafío de la vida de Ariel Wilner", 
-                command: { cmd: "text", txt: "El desafío de la vida de Ariel Wilner", 
-                    align: "left", lines: 4, url: "", label: "", point: [33, 92] 
+            tubo4: { file: "tubo-4.png", frames: 2, frameDelay: 20, position: [76, 48], label: "El desafío de la vida", 
+                command: { cmd: "text", txt: "El desafío de la vida\nde Ariel Wilner", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/ariel-wilner#header", label: "", point: [79, 80] 
                 } 
             },
-            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "Modelado molecular", 
-                command: { cmd: "text", txt: "Modelado molecular", 
-                    align: "left", lines: 4, url: "https://proyectobios.com", label: "", point: [33, 92] 
+            tubo5: { file: "tubo-5.png", frames: 2, frameDelay: 20, position: [94, 55], label: "Modelado Molecular", 
+                command: { cmd: "text", txt: "Modelado Molecular\nde Federico Coscio y Pablo Power", 
+                    align: "center", lines: 2, url: "https://bioarte-preview.netlify.app/artistas/modelado-molecular#header", label: "", point: [97, 92] 
                 } 
             },
         }

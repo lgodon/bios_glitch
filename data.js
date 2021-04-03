@@ -51,6 +51,13 @@ module.exports.ROOMS = {
             h92562b: { cmd: "enter", room: "proyeccion", label: "Sala de proyección", point: [114, 82], enterPoint: [18, 94], obstacle: false },
             hde3f1e: { cmd: "enter", room: "patio", label: "Patio", point: [14, 82], enterPoint: [110, 84], obstacle: false },
             h1a00fb: { cmd: "enter", room: "frente", label: "Afuera", point: [64, 96], enterPoint: [40, 90], obstacle: false },
+        },
+        things: {
+            mesita: { file: "mesitadete.png", frames: 2, frameDelay: 20, position: [56, 78], label: "Mesa de té", 
+                command: { cmd: "text", txt: "*Tienes un poco de frío*\n*Tomas un té calentito*", 
+                    align: "center", lines: 2, label: "", point: [33, 92] 
+                } 
+            },
         }
     },
 

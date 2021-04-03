@@ -189,9 +189,12 @@ module.exports.ROOMS = {
         avatarScale: 2,
         pageBg: "#5467b5",
         bubblesY: 36,
-        spawn: [14, 84, 119, 92],
+        spawn: [16, 40, 100, 80],
         areaColors: {
             he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },
+            hee94e3: { cmd: "action", actionId: "TragoRosaInteract", label: "Trago molecular", point: [36, 40], obstacle: false },
+            hf6cc84: { cmd: "action", actionId: "TragoNaranjaInteract", label: "Tubo de ensayo", point: [36, 40], obstacle: false },
+            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Fórmula secreta", point: [36, 40], obstacle: false },
         },
         things: {
             mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },

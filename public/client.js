@@ -1133,7 +1133,9 @@ function newGame() {
 
 }
 
-
+function normalBackground() {
+    animation(bg, floor(WIDTH / 2), floor(HEIGHT / 2));
+}
 
 //this p5 function is called continuously 60 times per second by default
 function update() {
@@ -1181,7 +1183,11 @@ function update() {
             push();
             scale(ASSET_SCALE);
             translate(-NATIVE_WIDTH / 2, -NATIVE_HEIGHT / 2);
-            animation(bg, floor(WIDTH / 2), floor(HEIGHT / 2));
+            if (window[room + "DrawBackground"] != null) {
+                window[room + "DrawBackground"](normalBackground);
+            } else {
+                normalBackground();
+            }
             pop();
         }
 

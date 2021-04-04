@@ -3,7 +3,7 @@ WARNING: THIS IS STILL EXPERIMENTAL STUFF
 I want to have the ability to assign specific behaviors to each room without messing with the main engine
 So this is a file for client-side modifications (mods). There is one for the server side as well.
 Their naming convention is roomIdFunction.
-The functions are called by the engine at crucial points, only if they exist. 
+The functions are called by the engine at crucial points, only if they exist.
 */
 
 var isPsychedelic = false;
@@ -52,7 +52,7 @@ function initMod(playerId, roomId) {
           handStand(p.id, 1);
         });
       }
-    
+
 
     //prevent duplicate listeners
     if (!socket.hasListeners('musicOn')) {
@@ -116,7 +116,7 @@ function patioUpdate() {
         }
     }
 }
-  
+
 //called when I receive data from a player already in the room
 function patioIntro(playerId, roomId) {
     if (upsideDownPlayers.includes(playerId)) {
@@ -140,7 +140,7 @@ function patioDrawBackground(drawingFunction) {
 function proyeccionEnter(playerId, roomId) {
     if (playerId == me.id) {
         video = document.getElementById("iframe_video");
-        video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1";
+        video.src = "https://www.youtube.com/embed/pWJlfacgND0?autoplay=1&mute=1";
         e = document.getElementById("video-container");
         if (e != null) e.style.display = "block";
     }

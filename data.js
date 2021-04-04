@@ -207,15 +207,21 @@ module.exports.ROOMS = {
         spawn: [16, 40, 100, 80],
         areaColors: {
             he62121: { cmd: "enter", room: "hall", label: "Volver adentro", point: [120, 70], enterPoint: [14, 82], obstacle: false },
-            hee94e3: { cmd: "action", actionId: "TragoRosaInteract", label: "Trago molecular", point: [36, 70], obstacle: false },
-            hf6cc84: { cmd: "action", actionId: "TragoNaranjaInteract", label: "Tubo de ensayo", point: [36, 70], obstacle: false },
-            hfff4c7: { cmd: "action", actionId: "TragoDoradoInteract", label: "Cultivo celular", point: [36, 70], obstacle: false },
         },
         things: {
             mesa: { file: "patio-mesa.png", frames: 1, frameDelay: 0, position: [26, 67], label: "" },
-            rosa: { file: "patio-formula-rosa.png", frames: 2, frameDelay: 30, position: [28, 51], label: "" },
-            naranja: { file: "patio-formula-naranja.png", frames: 2, frameDelay: 30, position: [35, 53], label: "" },
-            marron: { file: "patio-formula-marron.png", frames: 2, frameDelay: 30, position: [40, 50], label: "" },
+            rosa: { file: "patio-formula-rosa.png", frames: 2, frameDelay: 30, position: [28, 51], label: "Trago molecular",
+                command: {
+                    cmd: "action", actionId: "TragoRosaInteract", label: "", point: [36, 70], obstacle: false
+                } },
+            naranja: { file: "patio-formula-naranja.png", frames: 2, frameDelay: 30, position: [35, 53], label: "Tubo de ensayo",
+                command: {
+                    cmd: "action", actionId: "TragoNaranjaInteract", label: "", point: [36, 70], obstacle: false
+                } },
+            marron: { file: "patio-formula-marron.png", frames: 2, frameDelay: 30, position: [40, 50], label: "Cultivo",
+                command: {
+                    cmd: "action", actionId: "TragoDoradoInteract", label: "", point: [36, 70], obstacle: false
+                } },
             alga1: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [7, 38], label: "" },
             alga2: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [13, 53], label: "" },
             alga3: { file: "patio-alga.png", frames: 2, frameDelay: 30, position: [9, 72], label: "" },

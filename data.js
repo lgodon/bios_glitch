@@ -66,6 +66,8 @@ module.exports.ROOMS = {
     sala1: {
         bg: "sala1-bg.png",
         area: "sala1-colision.png",
+        frames: 2,
+        frameDelay: 30,
         avatarScale: 3,
         pageBg: "#f9f4e3",
         bubblesY: 30,
@@ -105,6 +107,8 @@ module.exports.ROOMS = {
     sala2: {
         bg: "sala2-bg.png",
         area: "sala2-colision.png",
+        frames: 2,
+        frameDelay: 30,
         avatarScale: 3,
         pageBg: "#a6dbab",
         bubblesY: 30,
@@ -144,6 +148,8 @@ module.exports.ROOMS = {
     sala3: {
         bg: "sala3-bg.png",
         area: "sala3-colision.png",
+        frames: 2,
+        frameDelay: 30,
         avatarScale: 3,
         pageBg: "#fae8e1",
         bubblesY: 30,

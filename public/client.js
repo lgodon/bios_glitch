@@ -91,7 +91,7 @@ var BUBBLE_MARGIN = 3;
 //in millisecs, -1 forever in lurk mode
 var LOGO_STAY = -1;
 
-//default page background 
+//default page background
 var PAGE_COLOR = "#000000";
 
 //sprite reference color for palette swap
@@ -218,7 +218,7 @@ Things are quite asynchronous here. This is the startup sequence:
 
 * preload() preload general assets - avatars, icons etc
 * setup() assets loaded - slice, create canvas and create a temporary socket that only listens to DATA
-* wait for settings and room data from the server 
+* wait for settings and room data from the server
 * data is received, ROOM object exists BUT its damn images aren't loaded yet
 * check the loading images in draw() until they all look like something
 * when room images are loaded go to setupGame() and to lurking mode or fast track with a random username due to QUICK_LOGIN
@@ -262,7 +262,7 @@ function preload() {
     allSheets = loadImage(ASSETS_FOLDER + ALL_AVATARS_SHEET);
 
     REF_COLORS_RGB = [];
-    //to make the palette swap faster I save colors as arrays 
+    //to make the palette swap faster I save colors as arrays
     for (var i = 0; i < REF_COLORS.length; i++) {
         var rc = REF_COLORS[i];
         var r = red(rc);
@@ -274,7 +274,7 @@ function preload() {
 
 
 
-    //to make the palette swap faster I save colors as arrays 
+    //to make the palette swap faster I save colors as arrays
     for (var i = 0; i < HAIR_COLORS.length; i++) {
         HAIR_COLORS_RGB[i] = [];
         //each color
@@ -317,7 +317,7 @@ function preload() {
     menuBg = loadImage(ASSETS_FOLDER + MENU_BG_FILE);
     arrowButton = loadImage(ASSETS_FOLDER + "arrowButton.png");
 
-    var logoSheet = loadSpriteSheet(ASSETS_FOLDER + LOGO_FILE, 77, 74, 2);
+    var logoSheet = loadSpriteSheet(ASSETS_FOLDER + LOGO_FILE, 78, 74, 2);
     logo = loadAnimation(logoSheet);
     logo.frameDelay = 10;
 
@@ -372,7 +372,7 @@ function setup() {
     //by default the canvas is attached to the bottom, i want it in the container
     canvas.parent("canvas-container");
 
-    //adapt it to the browser window 
+    //adapt it to the browser window
     scaleCanvas();
 
     //since my avatars are pixelated and scaled I kill the antialiasing on canvas
@@ -410,7 +410,7 @@ function setup() {
     });
 
     //server sends out the response to the name submission, only if lurk mode is disabled
-    //it"s in a separate function because it is shared between the first provisional connection 
+    //it"s in a separate function because it is shared between the first provisional connection
     //and the "real" one later
     socket.on("nameValidation", nameValidationCallBack);
 
@@ -615,7 +615,7 @@ function newGame() {
     }
 
     //this is not super elegant but I create another socket for the actual game
-    //because I've got the data from the server and I don't want to reinitiate everything 
+    //because I've got the data from the server and I don't want to reinitiate everything
     //if the server restarts
     if (socket != null) {
         //console.log("Lurker joins " + socket.id);
@@ -635,9 +635,9 @@ function newGame() {
     players = {};
 
 
-    //all functions are in a try/catch to prevent a hacked client from sending garbage that crashes other clients 
+    //all functions are in a try/catch to prevent a hacked client from sending garbage that crashes other clients
 
-    //if the client detects a server connection it may be because the server restarted 
+    //if the client detects a server connection it may be because the server restarted
     //in that case the clients reconnect automatically and are assigned new ids so I have to clear
     //the previous player list to avoid ghosts
     //as long as the clients are open they should not lose their avatar and position even if the server is down
@@ -958,7 +958,7 @@ function newGame() {
                         var offY = ROOMS[me.room].bubblesY * ASSET_SCALE;
                         var newBubble = new Bubble(p.id, p.message, p.color, p.x, p.y, offY);
 
-                        //calling a custom function 
+                        //calling a custom function
                         if (window[me.room + "Talk"] != null) {
                             window[me.room + "Talk"](p.id, newBubble);
                         }
@@ -1088,7 +1088,7 @@ function newGame() {
 
 
     //server sends out the response to the name submission, only if lurk mode is enabled
-    //it"s in a separate function because it is shared between the first provisional connection 
+    //it"s in a separate function because it is shared between the first provisional connection
     //and the "real" one later
     socket.on("nameValidation", nameValidationCallBack);
 
@@ -1233,7 +1233,7 @@ function update() {
 
                         /*
                         IMPORTANT
-                        deltaTime The system variable deltaTime contains the time difference between 
+                        deltaTime The system variable deltaTime contains the time difference between
                         the beginning of the previous frame and the beginning of the current frame in milliseconds.
                         the speed is not based on the client framerate which can be variable but on the actual time that passes
                         between frames.
@@ -1324,7 +1324,7 @@ function update() {
 
                     //The clients should never take a player to an illegal place (transparent area pixels or non walkable areas)
                     //but occasionally a dude will open the developer console and change the coordinates to make his avatar fly around
-                    //Good for him! Let him have fun in his own little client! 
+                    //Good for him! Let him have fun in his own little client!
                     //All the others players will just stop displaying and hearing him
                     //because I really don't want to enforce this on the server side
                     var illegal = isObstacle(p.x, p.y, p.room, areas);
@@ -1507,7 +1507,7 @@ function update() {
 
         if (nickName == "" && (logoCounter < LOGO_STAY || LOGO_STAY == -1)) {
             logoCounter += deltaTime;
-            animation(logo, floor(width / 2), floor(height / 2));
+            animation(logo, abs(floor(width / 2)), abs(floor(height / 2)));
         }
 
     }//end game
@@ -1543,7 +1543,7 @@ function scaleCanvas() {
 
 }
 
-//I could do this in DOM (regular html and javascript elements) 
+//I could do this in DOM (regular html and javascript elements)
 //but I want to show a canvas with html overlay
 function avatarSelection() {
     menuGroup = new Group();
@@ -2062,7 +2062,7 @@ function moveToCommand(command) {
         me.destinationY = command.point[1] * ASSET_SCALE;
         socket.emit("move", { x: me.x, y: me.y, room: me.room, destinationX: command.point[0] * ASSET_SCALE, destinationY: command.point[1] * ASSET_SCALE });
     }
-    else //just move where you clicked (area) 
+    else //just move where you clicked (area)
     {
         me.destinationX = mouseX;
         me.destinationY = mouseY;
@@ -2236,7 +2236,7 @@ function getTalkInput() {
 
     if (time - lastMessage > SETTINGS.ANTI_SPAM) {
 
-        // Selecting the input element and get its value 
+        // Selecting the input element and get its value
         var inputVal = document.getElementById("chatField").value;
         //sending it to the talk function in sketch
         talk(inputVal);
@@ -2584,4 +2584,3 @@ window.addEventListener("blur", function () {
     if (socket != null && me != null)
         socket.emit("blur", { room: me.room });
 });
-
